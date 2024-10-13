@@ -1,0 +1,5 @@
+vizdoom==1.2.4
+numpy==1.25.2
+gymnasium==1.0.0
+gym==0.26.2
+opencv-python==4.10.0.84
