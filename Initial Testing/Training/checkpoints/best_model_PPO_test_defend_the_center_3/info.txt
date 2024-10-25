@@ -1,0 +1,5 @@
+Generated while punishing wasting ammo or losing health using less punishing reward function (reward = movement_reward + ammo_delta*0.1 + health_delta*0.2)
+
+(If this doesnt work I might have to increase the n_steps, also maybe ammo_delta 0.01 and health_delta 0.02????)
+
+Note: It didint work...
