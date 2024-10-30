@@ -1,0 +1,5 @@
+Same thing as last time but now we can move in any direction -> 1m steps doesnt work...again
+
+Model developed an interesting strategy where it waited in place to get hit, and ran away when it started taking damage, and almost never shot.
+
+(After looking back at this I might have cut it off too early, I also might have just stopped at a dead end I am not sure)

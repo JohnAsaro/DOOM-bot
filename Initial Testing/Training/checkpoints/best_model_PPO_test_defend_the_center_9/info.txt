@@ -1,0 +1,3 @@
+New test, same thing as 5 where we test it for 1m steps, ammo and health penalties are the same as they have been, and we use the best model from test 2 as a baseline
+
+It pretty consistently developed this behavior where it would fire like three shots and kill the first enemy, and then it would look for other enemies but not actually kill them for some reason, I think I have an idea of what I can do with this

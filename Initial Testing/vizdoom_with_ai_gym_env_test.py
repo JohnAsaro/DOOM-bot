@@ -59,7 +59,7 @@ class Deadly_Corridor_VZG(Env): #VizDoom + OpenAI Gym environment for deadly cor
             #info (dict): Additional information about the environment
 
         #Specify actions and take a step
-        actions = np.identity(7) #Create an identity matrix with 3 rows (3 actions), MOVE_LEFT, MOVE_RIGHT, ATTACK, these are the actions we can take in the environment
+        actions = np.identity(7) #Create an identity matrix with 7 rows (7 actions), TURN_LEFT, TURN_RIGHT, MOVE_FOWARD, MOVE_BACKWARDS, ATTACK, MOVE_LEFT, MOVE_RIGHT,  these are the actions we can take in the environment
         movement_reward = self.game.make_action(actions[action], 4) #Reward for taking a random action, second parameter is frame skip (skip 4 frames before taking the next action), the reason we do this is because it saves us time while being easy to see what is happening 
         reward = 0 #Initialize reward to 0
         truncated = False #Not implemented yet, so set to False. The idea is that if step passes some sort of limit, like a time limit, then the episode is truncated.
@@ -125,8 +125,10 @@ class Deadly_Corridor_VZG(Env): #VizDoom + OpenAI Gym environment for deadly cor
         
         #Gather any additional environment-specific info (like ammo, etc.)
         if self.game.get_state():
-            ammo = self.game.get_state().game_variables[0]  # Get the ammo count                
-            info = {"ammo": ammo}
+            self.hitcount = 0
+            self.ammo = 52 #We only have the pistol in this scenario and we start with 52 ammo
+            self.damage_taken = 0
+            info = {"ammo": self.ammo}
         else:
             info = {} #No gamestate means no info can be gathered
         
@@ -225,9 +227,10 @@ class VizDoomGym_Simple(Env): #Old Simplified VizDoom + OpenAI Gym environment, 
                 ammo = self.ammo 
                 health_delta = health - self.health  #Current health - old health = damage taken
                 health = self.health
-            
-                reward = movement_reward + ammo_delta*0.01 + health_delta*0.02 #Calculate the reward
-            
+
+                #reward = movement_reward*1 + ammo_delta*0.0384615385 + health_delta*0.01 #Calculate the reward, we get 1 pts for each enemy we kill, if we lose all heath our score is subtracted by 1, if we lose all ammo our score is subtracted by 1
+                reward = movement_reward*2 + ammo_delta*0.0384615385 + health_delta*0.01 #Calculate the reward, we get 2 pts for each enemy we kill, if we lose all heath our score is subtracted by 1, if we lose all ammo our score is subtracted by 1
+
             info = {"ammo": ammo}
         else:
             observation = np.zeros(self.observation_space.shape) #Return a blank screen

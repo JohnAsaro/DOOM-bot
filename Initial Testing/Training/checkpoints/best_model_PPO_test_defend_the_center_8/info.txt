@@ -1,0 +1,3 @@
+New test, we are just going to let the doomguy go for 1m steps, move in any direction and ignore the health and ammo aspect again -> Okay so it kind of did something? For some reason it got worse after the 850k mark so I will run another 1M tests based on the 850K model and see if that does anything...
+
+-> final result, okay after 2m steps it is getting better but very slowly, I get the idea this will work given enough time, so im abandoning trying to make this
