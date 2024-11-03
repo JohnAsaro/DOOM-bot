@@ -1,4 +1,0 @@
-Picking up where 12 left off but now punishing the bot for each shot by taking away 0.01 pts and doubling movement reward
-
-Result -> It does really good, I am happy with this model. It also heavily beats 15 in terms of length mean so that shows doubling the movement reward was the right call. 
-Length mean maxes out at 925K steps for some reason. 

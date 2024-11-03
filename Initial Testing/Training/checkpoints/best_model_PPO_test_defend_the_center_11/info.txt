@@ -1,3 +1,0 @@
-Ok same thing as 9 but we use test 1 as a baseline which is actually correct and also we ignore health delta because I think that was over punishing it?
-
-So the reward mean is getting higher as the episode length gets lower, which means these parameters are bad.
