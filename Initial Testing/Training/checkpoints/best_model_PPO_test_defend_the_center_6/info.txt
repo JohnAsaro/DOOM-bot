@@ -1,4 +1,0 @@
-Same thing as last time but now we can move in any direction for 1m steps
-
-Model developed an interesting strategy where it would circle strafe around the entire map until time ran out, avoiding losing score from shooting or loosing health. 
-In my tests it looks like it almost never shot or lost health. This beats 1 in terms of episode length mean by a longshot.

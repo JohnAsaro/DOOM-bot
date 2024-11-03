@@ -1,5 +1,0 @@
-Trying ammo_delta 0.0384615385, health_delta 0.01, movement_reward*2, n_steps 8192 and 1M steps (The logic is the reward is 1 if the level is passed, so if we fire all 26 shots we lose a point, if we lose all health we lose a point, and the reward for winning is double)
-
-Note: Okay this didnt really work, I notice that I actually misunderstood movement_reward, it rewards the doomguy with 2 points for every enemy he kills, so I have to keep that in mind.
-
-Looking at the reward mean and length mean it looks like the parameters were just bad here because both covnerged.

@@ -1,3 +1,0 @@
-Training for another million steps starting from where we left off with 11, however we punish ammo by less now (0.01 taken away per shot)
-
-Model does worse than 16 and 11.

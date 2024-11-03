@@ -1,3 +1,0 @@
-Same idea as 5 except we don't double the movement reward when we die so we punish the model less harshly (if this changes anything do the same for 6) 
-
-Note: It looks like this doesnt change anything in a meaningful way, except it does shoot like slightly more often for whatever reason.

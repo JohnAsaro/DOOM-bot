@@ -1,3 +1,0 @@
-Trying ammo_delta 0.01, health_delta 0.02 and n_steps 8192. -> Okay it kind of worked but I think I needed to train it for longer, I will try training it for 1M steps and also adjusting the function a little bit
-
-Note: This ended up being the right direction later on.
