@@ -1,0 +1,3 @@
+Generated while punishing wasting ammo or losing health using very punishing reward function (reward = movement_reward + ammo_delta*5 + health_delta*10)
+
+This ended up not working at all

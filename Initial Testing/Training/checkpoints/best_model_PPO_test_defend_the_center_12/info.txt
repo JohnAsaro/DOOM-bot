@@ -1,0 +1,5 @@
+Gonna try and redo 8 because I have a sneaking suspicion I messed it up (like I did it right the first time, checked the wrong model, and overwrote my good model), if it ends up spitting out something kind of useable, I will use that as a base for reward shaping
+
+Result -> YO THIS WORKS, YOOOOOOOOOOOOOOOOOO
+
+This beats 1 in terms of episode length. Best model was at 875K steps. 

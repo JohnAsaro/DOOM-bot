@@ -1,0 +1,1 @@
+Picking up where 12 left off but now punishing the bot for each shot by taking away 0.01 pts and doubling movement reward

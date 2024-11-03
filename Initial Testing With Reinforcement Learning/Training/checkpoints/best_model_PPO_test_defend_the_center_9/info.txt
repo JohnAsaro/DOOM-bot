@@ -1,0 +1,14 @@
+New test, same thing as 5 where we test it for 1m steps, ammo and health penalties are the same as they have been, and we use the best model from test 2 as a baseline
+
+It pretty consistently developed this behavior where it would fire like three shots and kill the first enemy, and then it would look for other enemies but not actually kill them for some reason, I think I have an idea of what I can do with this
+
+This is actually pretty good learning because it def got better at following the reinforcement overtime, but it still is worse than the baseline which I dont understand,
+This leads me to believe I have the right idea its just something wrong with the values of the reinforcement? I could be wrong though.
+
+
+So 10 was kind of a bust, but I have a new cool idea, lets just ignore health! I mean think about it, what we are trying to do in this scenerio is to get it to conserve ammo right? 
+Well we just punish it for doing too much shooting...Because the original RL function already rewards killing enemies which inherently avoids damage. Our reward mean at 1m steps for this was -20, while for PP01 (which worked) it was 10. 
+Basically lets just try this same strategy but punish the model less, see you in 11... 
+
+
+OH MY GOD TEST 2 WAS THE WRONG BASELINE I HAVE TO DO THIS ALL OVER

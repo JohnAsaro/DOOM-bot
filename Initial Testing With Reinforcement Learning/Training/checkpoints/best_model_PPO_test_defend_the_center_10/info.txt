@@ -1,0 +1,5 @@
+Same thing as test 9 except we dont double movement reward, I am curious to see if this changes things 
+
+This was worse, weirdly this model likes firing bullets more than 9 which is weird because it gets rewarded less for hitting targets
+
+OH MY GOD TEST 2 WAS THE WRONG BASELINE I HAVE TO DO THIS ALL OVER

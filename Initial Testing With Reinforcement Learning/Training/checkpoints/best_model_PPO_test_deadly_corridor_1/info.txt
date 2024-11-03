@@ -1,0 +1,4 @@
+It starts off randomly shooting things, then eventually develops the strategy of booking it to the armor.
+If I want it to kill every enemy, I probably have to go back to 100k and train it from there (tuning parameters as I). Because thats when it still wants to kill stuff.
+This would be a better strategy because booking it to the armor works on lower difficulties but not on higher difficulties.
+At 625k, it books it to the armor. 

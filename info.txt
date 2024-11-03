@@ -1,1 +1,0 @@
-Same thing as test 9 except we dont double movement reward, I am curious to see if this changes things 

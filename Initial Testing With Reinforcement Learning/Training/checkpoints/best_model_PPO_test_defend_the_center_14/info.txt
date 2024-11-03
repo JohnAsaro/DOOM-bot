@@ -1,0 +1,6 @@
+Ok littearly just the same thing as 1 but with more n_steps and with 1m total steps, maybe this will just make a goated bot?
+
+    Result, 500k beats 1m in terms of episode length mean for some reason. This does better than 15, but I think 15 would keep getting better if I kept running it. 
+    I am done with this test for now, its close enough to killing everything. 
+    
+    This is also the first one that beats test 1 in terms of episode length mean I think. 
