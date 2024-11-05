@@ -11,9 +11,7 @@ import os #To create directories for saving models
 
 class Deadly_Corridor_VZG(Env): #VizDoom + OpenAI Gym environment for deadly corridor
     
-    #We now have scenarios that are complicated enough where we can't just use a generalized enviornment
-    #so this one is made for deadly corridor, however, this can probably be reused for something else,
-    #so the naming convention will be "First map this was used on" + "_VZG" (VizDoomGym), 
+    #The naming convention will be "First map this was used on" + "_VZG" (VizDoomGym), 
     #but each config/map this env is used for will be listed below
 
     #Maps/Config: deadly_corridor
@@ -157,12 +155,15 @@ class Deadly_Corridor_VZG(Env): #VizDoom + OpenAI Gym environment for deadly cor
     def close(self): #Close the environment
         self.game.close()
 
-class VizDoomGym_Simple(Env): #Old Simplified VizDoom + OpenAI Gym environment, used for defend_the_center and basic configs
+class Defend_the_Center_VZG(Env): #Used for defend_the_center config
     def __init__(self, config_path, render=False): #Constructor
         
-        #Configs this is used for: basic.cfg, defend_the_center.cfg
+        #The naming convention will be "First map this was used on" + "_VZG" (VizDoomGym), 
+        #but each config/map this env is used for will be listed below
 
-        super(VizDoomGym_Simple, self).__init__() #Inherit from Env class
+        #Maps/Config: defend_the_center
+
+        super(Defend_the_Center_VZG, self).__init__() #Inherit from Env class
 
         #Args: 
             #config_path (str): The path to the configuration file
@@ -206,7 +207,6 @@ class VizDoomGym_Simple(Env): #Old Simplified VizDoom + OpenAI Gym environment, 
         reward = movement_reward #Initialize reward to movement reward
         truncated = False #Not implemented yet, so set to False. The idea is that if step passes some sort of limit, like a time limit, then the episode is truncated.
         info = {} #Initialize info to an empty dictionary
-        Basic = False
 
         if self.game.get_state(): #If the game is not finished
             observation = self.game.get_state().screen_buffer #Get the screen buffer
@@ -222,16 +222,15 @@ class VizDoomGym_Simple(Env): #Old Simplified VizDoom + OpenAI Gym environment, 
                 Basic = True
             
             #Calculate reward deltas
-            if(Basic == False): #If its the basic config we just ignore all deltas entirely, I know this is janky but its just a testing enviorment so whatever
-                ammo_delta = ammo - self.ammo #Current ammo - old ammo = ammo used
-                ammo = self.ammo 
-                health_delta = health - self.health  #Current health - old health = damage taken
-                health = self.health
+            ammo_delta = ammo - self.ammo #Current ammo - old ammo = ammo used
+            ammo = self.ammo 
+            health_delta = health - self.health  #Current health - old health = damage taken
+            health = self.health
 
-                #reward = movement_reward*2 + ammo_delta*0.0384615385 + health_delta*0.01 #Calculate the reward, we get 2 pts for each enemy we kill, if we lose all heath our score is subtracted by 1, if we lose all ammo our score is subtracted by 1
-                #reward = movement_reward*2 + ammo_delta*0.0384615385 + health_delta*0 #Test where we ignore health delta because it might just be punishing the model too much
-                #reward = movement_reward*2 + ammo_delta*0.01 + health_delta*0 #Test where we lower the amount the model is punished for wasting ammo
-                reward = movement_reward #Ignore reward shaping
+            #reward = movement_reward*2 + ammo_delta*0.0384615385 + health_delta*0.01 #Calculate the reward, we get 2 pts for each enemy we kill, if we lose all heath our score is subtracted by 1, if we lose all ammo our score is subtracted by 1
+            #reward = movement_reward*2 + ammo_delta*0.0384615385 + health_delta*0 #Test where we ignore health delta because it might just be punishing the model too much
+            reward = movement_reward*2 + ammo_delta*0.01 + health_delta*0 #Test where we lower the amount the model is punished for wasting ammo
+            #reward = movement_reward #Ignore reward shaping
             info = {"ammo": ammo}
         else:
             observation = np.zeros(self.observation_space.shape) #Return a blank screen
@@ -304,10 +303,6 @@ class VizDoomGym_Simple(Env): #Old Simplified VizDoom + OpenAI Gym environment, 
 
     def close(self): #Close the environment
         self.game.close()
-
-#Example usage
-#from pathfinder import doomfinder #To find stuff in the ViZDoom folder
-#game_environment = VizDoomGym_Simple(doomfinder("basic.cfg"), True) #Create a ViZDoom environment
 
 class TrainAndLogCallback(BaseCallback):
     

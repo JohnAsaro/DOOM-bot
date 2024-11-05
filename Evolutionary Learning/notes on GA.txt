@@ -1,2 +1,0 @@
-1 - test w/trained_agents = run_ga(env, generations=100, pop_size=10, num_parents=5, mutation_rate=0.01) & reward shaping where ammo wasted iss punished by 0.01 pts lost -> did not work
-2 - test w/trained_agents = run_ga(env, generations=100, pop_size=10, num_parents=5, mutation_rate=0.01) & no reward shaping ->

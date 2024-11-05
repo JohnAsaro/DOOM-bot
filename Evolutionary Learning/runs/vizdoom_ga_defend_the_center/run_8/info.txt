@@ -1,0 +1,1 @@
+Start from scratch with a new fitness function that uses "killcount" to punish each missed bullet by -1 pt, reward function is still 1 kill = 1 pt. 1000 generations population size 30.

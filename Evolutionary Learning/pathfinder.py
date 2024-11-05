@@ -55,7 +55,7 @@ def logfinder(filename):
         else:
             raise FileNotFoundError(f"File '{user_file_path}' not found.")
         
-def create_new_checkpoint_directory(folder_name):
+def create_new_best_generation_directory(folder_name):
     """
     Creates a new directory for saving model checkpoints.
 
@@ -64,7 +64,7 @@ def create_new_checkpoint_directory(folder_name):
     Returns:
         str: The path to the new directory.
     """
-    base_dir = './Training/checkpoints'
+    base_dir = './Training/Best_Models'  #Define the base directory for saving models
     #List all existing directories that match the "best_models_x" pattern
     existing_dirs = [d for d in os.listdir(base_dir) if d.startswith(folder_name)]
 
