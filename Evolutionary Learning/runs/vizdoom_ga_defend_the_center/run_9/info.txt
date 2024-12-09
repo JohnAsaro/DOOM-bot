@@ -1,1 +1,5 @@
 Same as run 8 but we start with the 1000 best agents from run 7 as our initial population.
+
+Similar strategy as 7 (spins around firing and misses a lot). Avg fitness 6.7 and length mean 14.57. 
+
+I am going to move on to other evolutionary methods now becuase I do not seem to be making a lot of progress with GA's. 

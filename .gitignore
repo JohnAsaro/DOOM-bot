@@ -1,1 +1,8 @@
 /Evolutionary Learning/run_backups/
+.env
+DOOM.WAD
+DOOM2.WAD
+freedoom2.wad
+_vizdoom.ini
+__pycache__
+_bleh.ini
