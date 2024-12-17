@@ -10,3 +10,4 @@ stable_baselines3==2.3.2
 tensorboard==2.18.0
 tensorboard-data-server==0.7.2
 torch-tb-profiler==0.4.3
+numpy==2.2.0
