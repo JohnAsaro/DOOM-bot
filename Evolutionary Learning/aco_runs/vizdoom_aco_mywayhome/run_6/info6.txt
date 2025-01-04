@@ -1,0 +1,65 @@
+env = mywayhome_VZG(config_path=doomfinder("my_way_home_4_dir.cfg"), pheromone_evaporation_rate=0.00009523809, render=False, frameskip=2) #Lower frameskip makes better maps but takes longer
+aco_training(env, num_ants = 10, iterations=50, pheromone_deposit = 2.0, run_dir=run_dir, log_dir=log_dir, maps_dir=maps_dir) #Run ACO training# Available buttons
+
+available_buttons =
+	{
+		MOVE_FORWARD
+		MOVE_LEFT
+		MOVE_RIGHT
+		MOVE_BACKWARD
+	}
+
+# Game variables that will be in the state
+available_game_variables = { POSITION_X POSITION_Y ANGLE } 
+
+Same as last time but super low frameskip now.
+
+Results: Ran tests 6-8 all at the same time so I am just gonna write the results here:
+
+Run 6: This is the best one so far (other than 8), it actually makes its way to the armor about half the time it looks like, and seems to be going down some sort of path a lot of the time, even though those paths usually lead to nothing. 
+Run 7: I think that having a frameskip of 1 is actually sort of a bad thing sometimes, because pheremones are so spread out that the bot sort of gets decision paralysis and ends up moving,
+back and foward a lot (so like get to a point where theres 4 possible moves, they all have similiar pheremone deposits, so they all end up having about the same chance of being chosen, leading to seemingly random movement).
+It also seems to have the same problem run 6 does where certain walls have TONS of pheremones leading them to get "stuck" at certain walls. Probably a good idea to track number of sucessful ants for future runs.
+Run 8: Just run 6 but it seemed to have a little more sense. The change in beta here didint really matter because of how alpha and beta are calculated which I will get into later.
+
+To go more in depth about how doomguy got stuck, he would keep walking close to a wall, and alternating between different cells adjacent to a wall.
+
+On future runs:
+
+So I these took about a day to generate and based on how these models act I came up with a lot of neat ideas and conclusions.
+
+Conclusions/Ideas: 
+
+Going foward when talking about a point on the grid I am just going to call it a cell because thats easier.
+
+1: I think the current pheremone evaporation rate is a bit too low. You sort of see it in the logs, but as the maps 
+were generating, sometimes the pheremone intensity range would shoot WAY up to the hundreds after a few ants. 
+Maybe just 1/2100 pheremone evaporation rate for future runs, or even faster.
+2: I want to adjust the alpha and beta calculations for the next moves. Right now, the probability of a given move is 
+calcualted as so: probs.append((pheromone ** alpha) * (eta ** beta)) -> probs = np.ones(len(possible_moves)) / len(possible_moves)
+Its important to note that the pheremone value can go very high, but eta ranges from 0-1. The problem with this, is that if we get large clumps of pheremones with high intensity, say a cell with phermeone intensity 100, than the alpha matters significantly more than the beta.
+Maybe I can make it so that the beta acounts for some x > 100% probability of making a given move, and alpha accounts for some y > 100% of making a move, where x + y = 100%.
+I think this would make it so that walls with lots of pheremones are less overwhelmingly attractive to doomguy, hopefully making him focus more on the mission.
+3: An idea I have to mark every move made, so that the bot doesnt backtrack constantly. The problem with this is that
+unlike heuristic searches we don't really have a way of getting ourselves unstuck. Like in branch and bound for example, 
+if you were to be in a grid space, like so (x is doomguy, 0 is unmarked, 1 is marked, -1 is wall, 2 is searched):
+
+000x  -> 01x -> 0x2 -> 022 -> 022
+000      001    011    0x1    x21, you wouldnt be stuck because you would still have that one marked to backtrack to. 
+But you totally would be in the method I just proposed. In situtations like that you could fall back on the 
+pheremone/heuristic guidance but for larger areas that would require you to traverse the entire space covering every unmarked pixel before backtracking.
+
+So what I could do is give it mememory like in A* and branch and bound, meaning the action space of doomguy would not just be limited to
+move to any adjacent cell, but it would also be considering backtracking to previous unexplored cells. This would require it to 
+"expand" at each step, marking each unexplored cell by adding it to a list, this would let it backtrack to unexplored cells instead of spending a long time being stuck.
+
+But this is starting to remind me of the ship of theseus, we are keep stripping stuff away from ACO and making it into a hueristic search, 
+and that might littearly be neccesary to solve this problem, but I would like to keep it to ACO for now, and maybe experement with this later.
+
+Also, implementing proper strict backtracking might be difficult due to having to account for frameskips and weird doom momentum.
+
+On the otherhand, it could be intersting to save a log of all the best pathways between cells, so an A* implementation is initialized with the best pathways already known, 
+and it is constantly checking trying to improve those best pathways each run, which is a type of learning although a limited one. Defiently a good idea if I can't get this to 
+work for this map or others, A* search + grid representation might have potenetial.
+
+So I think for the next run, I am going to adjust the way beta and alpha are calcuated, mark each visited cell, increase pheremone evaporation rate, add a way to track how many successful ants there were, and increase frameskip to 3 because I bet I can get away with that.
