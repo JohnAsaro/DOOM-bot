@@ -1,0 +1,20 @@
+env = mywayhome_VZG(config_path=doomfinder("my_way_home_4_dir.cfg"), pheromone_evaporation_rate=0.00003968253, render=False, frameskip=4) #Lower frameskip makes better maps but takes longer
+aco_training(env, num_ants = 10, iterations=300, pheromone_deposit = 8.0, run_dir=run_dir, log_dir=log_dir, maps_dir=maps_dir, alpha = 0.6, beta = 0.4) #Run ACO training
+available_buttons =
+	{
+		MOVE_FORWARD
+		MOVE_LEFT
+		MOVE_RIGHT
+		MOVE_BACKWARD
+	}
+
+# Game variables that will be in the state
+available_game_variables = { POSITION_X POSITION_Y ANGLE } 
+
+Changes that were talked about at the end of run 6 were added, aswell as making it so that pheremone deposits and evaportation does not happen in real time, but only after an ant has finished its pathfinding.
+This was done to discourage ants following their own scent and getting stuck. The number of tics an ant gets was changed from 2100 to 8400 to give ants who spawned 
+farther away from the armor more of a chance of getting to it. Also, if an ant returns to a cell more than once in any given path, the pheremone deposit is only added to once.
+This solves the problem of ants getting stuck close to walls, and then depositing more and more pheremones there, getting new ants stuck.
+Pheromone evaporation rate was adjusted to the new amount of tics/way its calculated. Finally, the beta coefficent now uses a prority system. 
+The choice that gets you closest the the goal will get all of the beta coefficent, the choice that gets you second closest will get 50%, third 25% and fourth 0%.
+If tied choices just use the lower of the two proirities, ie: two choices tied for first place both get second place prority, second place gets third place, and third gets last place. 
