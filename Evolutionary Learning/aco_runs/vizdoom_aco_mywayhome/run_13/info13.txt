@@ -1,0 +1,30 @@
+env = mywayhome_VZG(config_path=doomfinder("my_way_home_4_dir.cfg"), pheromone_evaporation_rate=0.00003968253, render=False, frameskip=4) #Lower frameskip makes better maps but takes longer
+test_saved_maps(env=env, num_tests=5, pheromone_grid=saved_pheromone_grid, alpha = 0.7, beta = 0.3) #Test the saved pheromone maps
+available_buttons =
+	{
+		MOVE_FORWARD
+		MOVE_LEFT
+		MOVE_RIGHT
+		MOVE_BACKWARD
+	}
+
+# Game variables that will be in the state
+available_game_variables = { POSITION_X POSITION_Y ANGLE VELOCITY_X VELOCITY_Y } 
+
+Same as run 12 except the logic that determines what happens when every avaliable move has been already taken (so each move that the doomguy can take at a given step is part of the path).
+Right now it picks randomly weighted by alpha and beta, like doomguy hasnt been to any of the possible moves before, but I am worried that might be causing pheremone clumps (albeit less exrteme ones than we saw before),
+so this run just has it pick a random move in that scenerio. This also adds some good variety which might eventually optimize its self in an evolutionary fashion.
+
+RESULT: The random logic seems to outperform the original logic in close spawns and far spawns, but in relatively close spawns, the original logic outeperforms.
+
+Original: 
+Total spawned far: 22/352 -> 6.25%
+Total spawned relatively close: 46/416 -> 11.0576923077%
+Total spawned close: 85/1232 -> 6.89935064935%
+
+Random: 
+Total spawned far: 25/336 -> 7.44047619048%
+Total spawned relatively close: 33/389 -> 8.48329048843%
+Total spawned close: 121/1275 -> 9.49019607843%
+
+This could be due to random chance so I am going to regenrate the results to make sure.
