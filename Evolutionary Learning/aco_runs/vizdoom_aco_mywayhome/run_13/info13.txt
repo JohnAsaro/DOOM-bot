@@ -27,4 +27,25 @@ Total spawned far: 25/336 -> 7.44047619048%
 Total spawned relatively close: 33/389 -> 8.48329048843%
 Total spawned close: 121/1275 -> 9.49019607843%
 
-This could be due to random chance so I am going to regenrate the results to make sure.
+However, when regenerating the results, it was found that this was due to random chance, there really doesnt seem to be much of a difference between the two methods.
+
+Original Test 1:
+Total spawned far: 20/347 -> 5.76368876081%
+Total spawned relatively close: 40/406 -> 9.82800982801%
+Total spawned close: 106/1247 -> 8.50040096231%
+
+Random Test 1:
+Total spawned far: 23/388 -> 7.39644970414%
+Total spawned relatively close: 44/353 -> 12.4645892351%
+Total spawned close: 91/1259 -> 7.22795869738%
+
+Original Test 2:
+Total spawn counts and success rates at iteration 199/200
+Total spawned far: 26/366 -> 7.10382513661%
+Total spawned relatively close: 48/416 -> 11.5384615385%
+Total spawned close: 109/1218 -> 8.94909688013%
+
+Random Test 2:
+Total spawned far: 24/381 -> 6.29921259843%
+Total spawned relatively close: 30/400 -> 7.5%
+Total spawned close: 92/1219 -> 7.54716981132%
