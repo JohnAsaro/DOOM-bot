@@ -1,5 +1,6 @@
 env = mywayhome_VZG(config_path=doomfinder("my_way_home_4_dir.cfg"), pheromone_evaporation_rate=0.00003968253, render=False, frameskip=4) #Lower frameskip makes better maps but takes longer
-test_saved_maps(env=env, num_tests=5, pheromone_grid=saved_pheromone_grid, alpha = 0.7, beta = 0.3) #Test the saved pheromone maps
+aco_training(env, num_ants = 10, iterations=200, pheromone_deposit = 8.0, run_dir=run_dir, log_dir=log_dir, maps_dir=maps_dir, alpha = 0.7, beta = 0.3) #Run ACO training
+
 available_buttons =
 	{
 		MOVE_FORWARD
