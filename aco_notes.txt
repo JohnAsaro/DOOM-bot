@@ -1,14 +1,5 @@
 
-Backlog: 
-
-Task 1 - account for friction, friction is found here  (https://github.com/0dot0repeating/quakemovement) 
-
-^ This will probably be an eternal item because this is incredibly hard to perfect, but what I have now is 
-pretty good for frameskips 4 and below. It falls off the larger the frameskip gets. 
-
-Task 1.1 - One thing I can do is 
-create an updated enviornment that does everything the same but now tracks the accuracy of a given move
-idk how we classify it, maybe like "hits" (exact predictions), "near misses" (almost there) and "misses" (completely off)
+Backlog (Ordered based on priority/how easy they are): 
 
 Task 2 - because the velocity and frameskip might make the steps big, 
 we now might need to account for the alpha and beta in the entire path taken in a given step, 
@@ -17,7 +8,16 @@ as soon as that step hits a wall, cut it off
 Task 3 - figure out how the distance from spawn to goal and time hueristic are being calculated, how much of a boost is it, 
 which one is proirtized more (tbh I forgot how its calculated lol)
 
-Task 3.1 - do a test with varying amount of time/spawn to goal distance hueristic
+    Task 3.1 - do a test with varying amount of time/spawn to goal distance hueristic
+
+Task ? - account for friction, friction is found here  (https://github.com/0dot0repeating/quakemovement) 
+
+^ This will probably be an eternal item because this is incredibly hard to perfect, but what I have now is 
+pretty good for frameskips 4 and below. It falls off the larger the frameskip gets. 
+
+Task ?.1 - One thing I can do is 
+create an updated enviornment that does everything the same but now tracks the accuracy of a given move
+idk how we classify it, maybe like "hits" (exact predictions), "near misses" (almost there) and "misses" (completely off)
 
 
 Possible Concessions: 
