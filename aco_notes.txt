@@ -1,7 +1,7 @@
 
 Backlog (Ordered based on priority/how easy they are): 
 
-Task 2 - because the velocity and frameskip might make the steps big, 
+Task 1 - because the velocity and frameskip might make the steps big, 
 we now might need to account for the alpha and beta in the entire path taken in a given step, 
 as soon as that step hits a wall, cut it off
 
@@ -23,12 +23,15 @@ idk how we classify it, maybe like "hits" (exact predictions), "near misses" (al
 Possible Concessions: 
 
 1 - a concession I could do is getting rid of the random spawn and maybe even the angle,
-and then just see if the optimization works. 
+and then just see if the optimization works. <- If the next few tests don't work I am going to do this
 
 2 - At risk of making the scenerio more contrived, 
-I can make it so that spaces next to walls dont accumulate pheremones
+I can make it so that spaces next to walls dont accumulate pheremones <- probably wont do
 
 Tests:
 
 1 - I could make it so that it ONLY deposits pheremones on sucessful paths -> I did this but I can do it more
 
+Future Scenerios:
+1 - E1M1 (start with no obstacles or interactables before integrating w/CMA-ES)
+2 - Get 3 keys, where beta switches between keys, (so when you get one, the second part of the map gets unlocked and you can get that key, then when you get the last one the exit opens and beta switches to that)
