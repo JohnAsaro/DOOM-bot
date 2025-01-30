@@ -1,14 +1,18 @@
 
 Backlog (Ordered based on priority/how easy they are): 
 
+Task 0 - Maybe we just eliminate the random weighted choice all together, and only make that apply when all possible options have already been in the path? 
+Honestly that is probably the best way to go about this, because even if we get some paths going the wrong way, we have low phereomone deposits on those, and 
+it really just needs 1 "correct" path. Also, I think this random choice is whats causing the 1 frameskip models to totally fail.
+
 Task 1 - because the velocity and frameskip might make the steps big, 
 we now might need to account for the alpha and beta in the entire path taken in a given step, 
 as soon as that step hits a wall, cut it off
 
-Task 3 - figure out how the distance from spawn to goal and time hueristic are being calculated, how much of a boost is it, 
+Task 2 - figure out how the distance from spawn to goal and time hueristic are being calculated, how much of a boost is it, 
 which one is proirtized more (tbh I forgot how its calculated lol)
 
-    Task 3.1 - do a test with varying amount of time/spawn to goal distance hueristic
+    Task 2.1 - do a test with varying amount of time/spawn to goal distance hueristic
 
 Task ? - account for friction, friction is found here  (https://github.com/0dot0repeating/quakemovement) 
 
