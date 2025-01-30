@@ -5,6 +5,11 @@ Task 0 - Maybe we just eliminate the random weighted choice all together, and on
 Honestly that is probably the best way to go about this, because even if we get some paths going the wrong way, we have low phereomone deposits on those, and 
 it really just needs 1 "correct" path. Also, I think this random choice is whats causing the 1 frameskip models to totally fail.
 
+Task 0.1 - However, that being said, ACO does in fact work off random choice: https://www.sciencedirect.com/science/article/pii/B9780128127070000103, so maybe a better way to go about this 
+could be to get rid of unsuccessful path pheremone deposits, nerf the scenerio to not include random spawns, only do pheremone evaporation and deposit once an iteration, and increase ants to 50ish. 
+This not only better reflects the next scenerios I plan on doing, but also better solves problems that ACO is well suited for, and also is a more accurate way of doing ACO. I think 
+letting the path evolve so much in real time has been shooting me in the foot.
+
 Task 1 - because the velocity and frameskip might make the steps big, 
 we now might need to account for the alpha and beta in the entire path taken in a given step, 
 as soon as that step hits a wall, cut it off
