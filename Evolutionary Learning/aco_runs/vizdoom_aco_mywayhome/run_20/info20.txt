@@ -1,0 +1,36 @@
+env = mywayhome_VZG(config_path=doomfinder("my_way_home_4_dir.cfg"), pheromone_evaporation_rate=0.2, render=False, frameskip=45) #Lower frameskip makes better maps but takes longer
+aco_training(env, num_ants = 10, iterations=200, unsuccessful_deposit=0.1, pheromone_deposit = 20.0, run_dir=run_dir, log_dir=log_dir, maps_dir=maps_dir, alpha = 0.7, beta = 0.3, log_image_rate = 25) #Run ACO training
+
+available_buttons =
+	{
+		MOVE_FORWARD
+		MOVE_LEFT
+		MOVE_RIGHT
+		MOVE_BACKWARD
+	}
+
+# Game variables that will be in the state
+available_game_variables = { POSITION_X POSITION_Y ANGLE VELOCITY_X VELOCITY_Y } 
+
+Note: We continue where 19 left off.
+
+Changes:
+Pheremones now evaporate at a set rate instead of evaportating more based on the amount of tics passed last iteration.
+This was punishing routes were good when other routes were inefficent, which could mean we get one good route, 
+then 4 or 5 terrible spawns, and just have it evaporate. The evaporation rate of 0.2 roughly approximates where we were at before,
+where 1 pheromone evaportates from each part of the grid every 5 ants.
+
+We also now account for friction when calculating select next move, this doesnt really work for frameskips
+higher than 4, as the approximation gets farther and farther off the larger frameskip grows, but this is closer than before. 
+(NOTE, THIS WAS CRASHING THE ENV, SO ITS DISABLED IN THIS RUN, I WILL FIX THIS AND ENABLE IT FOR FUTURE RUNS)
+
+We can now pheremone deposit next to walls again.
+
+When select next move calculates the doom guy running into the wall, instead of returning the space in the wall
+he would have ran into if there was no collision, it caps it at the first wall he would have run into through backtracking.
+
+Also we now add the move we thought we made in select next move to path, so that we dont get stuck running into a wall due to miscalculated
+positions. 
+
+Finally we switch pheremone evaporation from being percentage based to subtracting the evaportation rate directly from each cell. This might be 
+bad and need changing lets see (effectively will lower evaporation rate, but allow strong paths to stay longer).
