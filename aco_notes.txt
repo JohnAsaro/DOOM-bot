@@ -6,7 +6,7 @@ Honestly that is probably the best way to go about this, because even if we get 
 it really just needs 1 "correct" path. Also, I think this random choice is whats causing the 1 frameskip models to totally fail.
 
 Task 0.1 - However, that being said, ACO does in fact work off random choice: https://www.sciencedirect.com/science/article/pii/B9780128127070000103, so maybe a better way to go about this 
-could be to get rid of unsuccessful path pheremone deposits, nerf the scenerio to not include random spawns, only do pheremone evaporation and deposit once an iteration, and increase ants to 50ish. 
+could be to get rid of unsuccessful path pheremone deposits, nerf the scenerio to not include random spawns, only do pheremone evaporation and deposit once an iteration, and increase ants to 50ish (and also rank those paths and deposit the most pheremones on the best paths). 
 This not only better reflects the next scenerios I plan on doing, but also better solves problems that ACO is well suited for, and also is a more accurate way of doing ACO. I think 
 letting the path evolve so much in real time has been shooting me in the foot.
 
