@@ -34,3 +34,5 @@ positions.
 
 Finally we switch pheremone evaporation from being percentage based to subtracting the evaportation rate directly from each cell. This might be 
 bad and need changing lets see (effectively will lower evaporation rate, but allow strong paths to stay longer).
+
+Result: About a 50% sucess rate at each spawn, cool, but not good enough. I am transitioning to a node based approach now. See node based approach folder.

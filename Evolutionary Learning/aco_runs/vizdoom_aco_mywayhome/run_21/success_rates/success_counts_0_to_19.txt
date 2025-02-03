@@ -1,0 +1,110 @@
+Success rates for iterations 0 to 19:
+
+Success rates for iteration 1:
+Spawned far: 0/3
+Spawned relatively close: 0/0
+Spawned close: 2/7
+
+Success rates for iteration 2:
+Spawned far: 0/0
+Spawned relatively close: 0/2
+Spawned close: 2/8
+
+Success rates for iteration 3:
+Spawned far: 0/2
+Spawned relatively close: 0/2
+Spawned close: 1/6
+
+Success rates for iteration 4:
+Spawned far: 0/2
+Spawned relatively close: 0/2
+Spawned close: 2/6
+
+Success rates for iteration 5:
+Spawned far: 0/2
+Spawned relatively close: 0/1
+Spawned close: 1/7
+
+Success rates for iteration 6:
+Spawned far: 0/2
+Spawned relatively close: 0/3
+Spawned close: 0/5
+
+Success rates for iteration 7:
+Spawned far: 0/0
+Spawned relatively close: 0/2
+Spawned close: 1/8
+
+Success rates for iteration 8:
+Spawned far: 0/2
+Spawned relatively close: 0/2
+Spawned close: 0/6
+
+Success rates for iteration 9:
+Spawned far: 0/4
+Spawned relatively close: 0/2
+Spawned close: 0/4
+
+Success rates for iteration 10:
+Spawned far: 0/1
+Spawned relatively close: 0/0
+Spawned close: 1/9
+
+Success rates for iteration 11:
+Spawned far: 0/1
+Spawned relatively close: 0/3
+Spawned close: 0/6
+
+Success rates for iteration 12:
+Spawned far: 0/2
+Spawned relatively close: 2/3
+Spawned close: 0/5
+
+Success rates for iteration 13:
+Spawned far: 1/2
+Spawned relatively close: 0/5
+Spawned close: 0/3
+
+Success rates for iteration 14:
+Spawned far: 0/2
+Spawned relatively close: 0/2
+Spawned close: 0/6
+
+Success rates for iteration 15:
+Spawned far: 0/1
+Spawned relatively close: 1/4
+Spawned close: 3/5
+
+Success rates for iteration 16:
+Spawned far: 0/1
+Spawned relatively close: 0/3
+Spawned close: 4/6
+
+Success rates for iteration 17:
+Spawned far: 0/3
+Spawned relatively close: 1/3
+Spawned close: 4/4
+
+Success rates for iteration 18:
+Spawned far: 1/2
+Spawned relatively close: 0/2
+Spawned close: 4/6
+
+Success rates for iteration 19:
+Spawned far: 0/1
+Spawned relatively close: 0/3
+Spawned close: 4/6
+
+Success rates for iteration 20:
+Spawned far: 0/2
+Spawned relatively close: 0/1
+Spawned close: 6/7
+
+------------------------------------------------------------
+
+Total success rates so far:
+Total spawned far: 2/35
+Total spawned relatively close: 4/45
+Total spawned close: 35/120
+
+------------------------------------------------------------

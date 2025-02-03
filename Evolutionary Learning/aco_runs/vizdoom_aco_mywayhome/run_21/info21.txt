@@ -13,3 +13,6 @@ available_buttons =
 available_game_variables = { POSITION_X POSITION_Y ANGLE VELOCITY_X VELOCITY_Y } 
 
 Note: Exact same changes as 20 except we go down to a frameskip of 4, the friction is also disabled in this one due to the crashing.
+
+Result: Okay so this crashed at iteration 77, this is fine, this method was never going to work, the entire grid as an input space is too large, I am shifting to a node based approach now.
+(See node based approach folder.)

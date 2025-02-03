@@ -1,4 +1,30 @@
+New (node based direction) backlog:
 
+Okay, so this grid representation isnt going to work out. It just is too hard to simulate next move in real time,
+beyond that, the input space is MASSIVE with a grid. This makes pathfinding take way long than it should. So if we rework it this 
+way, there should be like 80 or so nodes that span the entire grid, we rework random spawns in the map to be at one of those 80
+nodes (although maybe that can be a later thing and for right now we just have it be a set spawn). Angle is no longer a factor, and we no longer have to worry about friction and velocity, it doesnt really matter as long as we 
+can hard code each interaction from node to node. Since we are simplifying the problem, we can also probably eliminate the heuristic at this point
+that being said, no harm keeping it at first and then just setting its weight to 0 later. It will be helpful for testing purposes. 
+Anyway, so when you are at a node, you can move to an adjacent node. These will be hardcode connections with edges. Some nodes will be farther
+from eachother than other adjacent nodes, so I think we just cut down the amount of tics the enviornment allows us to have, set the frameskip to 1, 
+and littearly hard code the bot to move to a node when it chooses too. Each node is connected by edges, so we deposit pheremones along these edges.
+When we make a move from one node to another, we maybe shouldnt remove it from the path forever, because if it takes a wrong move it could just get stuck,
+so maybe it just can't go back to the node it just came from, to keep it moving foward (otherwise high pheremone edges will cause an infinite loop)? 
+^ actually scratch that, its probably a better idea just to make the edges directional
+
+Also, we do more ants, like 50 ants per, only deposit pheremones once an 
+iteration is over, and weight the amonunt of pheremones desposited based on how quick the path was, and if we do random spawns also factor in how far it spawned.
+Honestly though, if we are trying to pathfinding method that works on multiple maps, maybe just eliminate random spawns for consistency, idk.
+
+Note: Nodes should be set up such that any node can be easily acessed from a connected node by greedily making linear moves towards
+it with the hueristic "make a move that will get me closer to this node I want to get too". So no need for A* search or anything, at least
+for the labyrinth scenerio. I might have to change this later I am not sure. This will greatly improve processing time though. 
+
+Other maps I want to do are E1M1 w/out interactables or obstacles and "Get 3 keys, where beta and nodes open switches between keys, (so when you get one, the second part of the map gets unlocked and you can get that key, then when you get the last one the exit opens and beta switches to that)"
+
+
+Old Grid Based ACO Backlog, keeping this in case I go back to grid representation:
 Backlog (Ordered based on priority/how easy they are): 
 
 Task 0 - Maybe we just eliminate the random weighted choice all together, and only make that apply when all possible options have already been in the path? 
