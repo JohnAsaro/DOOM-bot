@@ -1,0 +1,47 @@
+env = mywayhome_VZG(config_path=doomfinder("my_way_home_4_dir.cfg"), pheromone_evaporation_rate=0.00003968253, render=False, frameskip=45) #Lower frameskip makes better maps but takes longer
+aco_training(env, num_ants = 10, iterations=200, unsuccessful_deposit=0.0, pheromone_deposit = 20.0, run_dir=run_dir, log_dir=log_dir, maps_dir=maps_dir, alpha = 0.7, beta = 0.3) #Run ACO training
+
+available_buttons =
+	{
+		MOVE_FORWARD
+		MOVE_LEFT
+		MOVE_RIGHT
+		MOVE_BACKWARD
+	}
+
+# Game variables that will be in the state
+available_game_variables = { POSITION_X POSITION_Y ANGLE VELOCITY_X VELOCITY_Y } 
+
+We go way up to a frameskip of 45, its pretty clear that high frameskips lead to easier traversal,
+as we move more distance per action, but visual systems cant learn that well when using such a high frameskip,
+so we need to devise a way to have it work at a lower frameskip aswell. Regardless the results are significantly better 
+due to the high frameskip.
+
+Another contributing factor could be some of the changes I made for this run, one of those being 
+now cells that are adjacent to walls do not gain pheremones. I don't like this because it is super contrived,
+but I just wanted to try it. I am not sure how much it helped, I should probably redo this same test without that modification.
+
+Another thing that changed is that we consider things with a phermone value of 0. This is because due to the high frameskip
+we will probably be running into things adjacent to walls a lot, and we should consider those options. I think I am ghoing to leave 
+it like this. 
+
+Also I changed phermone deposit from 8.0 to 200.0, this was the whole reason for the "next to wall = no pheremones" change because 
+it was causing massive pheremone deposits to build up on walls. I am really not sure how much this helped, because the predictions
+are still way off due to physics mumbo jumbo so I don't know how well it follows phermeone maps anyway. Furthermore since the actions 
+are repeating for 45 frames, so it can't really follow a path if a nice one was made. 
+
+Also also I changed the unsucessful_deposit rate to 0 which didint really meatter due to high phereomone deposit, but ill bring it back up to
+0.1 in the future, unless I see reason not too.
+
+Finally I improved the success logging for real this time so it saves every 20 iterations. This will act as a failsafe when the kernal crashes.
+
+Result:
+
+------------------------------------------------------------
+
+Total success rates:
+Total spawned far: 111/368 = 30.1630434783%
+Total spawned relatively close: 147/409 = 35.9413202934%
+Total spawned close: 714/1223 = 58.3810302535% 
+
+------------------------------------------------------------

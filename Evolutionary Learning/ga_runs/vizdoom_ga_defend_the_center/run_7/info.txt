@@ -1,3 +1,0 @@
-continuing from run 6 with initial population of its best generations with the same parameters except 30 population size and 1000 generations
-
-I don't know think it flattened out but it ended with an average reward mean of 6.2 and length mean of 146

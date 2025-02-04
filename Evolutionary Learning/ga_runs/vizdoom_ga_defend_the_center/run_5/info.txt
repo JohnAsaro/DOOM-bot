@@ -1,3 +1,0 @@
-Same as 4 but we start with the best agents of run 3 as an inital population
-
-Worse than 4 in terms of length mean (130) and reward mean (5) but it did not look like it flattened out.

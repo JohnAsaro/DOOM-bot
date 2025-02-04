@@ -1,3 +1,0 @@
-Start from scratch with a new fitness function that uses "killcount" to punish each missed bullet by -1 pt, reward function is still 1 kill = 1 pt. 1000 generations population size 30.
-
-Similar strategy as 7 (spins around firing and misses a lot) but I think this model shoots a bit more. This is definitely better than 7 and 9 with an episode length mean of 167.8 and avg reward mean of 7.5.

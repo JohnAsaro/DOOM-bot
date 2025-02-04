@@ -1,4 +1,0 @@
-Parameters were trained_agents = run_ga(env, generations=200, pop_size=20, num_parents=5, mutation_rate=0.01)
-Reward was "every enemy killed = + 1 pt, every death = -1 pt"
-
-Looks like best fitness was 27 pts (meaning it somehow killed all the enemies at one point).

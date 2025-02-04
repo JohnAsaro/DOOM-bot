@@ -1,3 +1,0 @@
-Moved each bullet used = -0.1 pts to the fitness function, fitness function agents are calculated as the average of 3 episodes, reward function is enemy dies = + 1 pt, doomguy dies = -1 pt
-
-Tied 4 in terms of episode length mean (136) and reward mean (5.6)

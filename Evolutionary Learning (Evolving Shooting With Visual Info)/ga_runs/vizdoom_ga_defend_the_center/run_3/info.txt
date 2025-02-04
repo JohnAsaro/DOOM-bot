@@ -1,0 +1,3 @@
+Same as 1 except it has another hidden layer
+
+Does better than 2 in terms of length mean (136) and beat as 2 in terms of reward mean (5.6)

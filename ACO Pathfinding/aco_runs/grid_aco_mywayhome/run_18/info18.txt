@@ -1,0 +1,17 @@
+env = mywayhome_VZG(config_path=doomfinder("my_way_home_4_dir.cfg"), pheromone_evaporation_rate=0.00003968253, render=False, frameskip=2) #Lower frameskip makes better maps but takes longer
+aco_training(env, num_ants = 10, iterations=200, pheromone_deposit = 8.0, run_dir=run_dir, log_dir=log_dir, maps_dir=maps_dir, alpha = 0.7, beta = 0.3) #Run ACO training
+
+available_buttons =
+    {
+		MOVE_FORWARD
+		MOVE_LEFT
+		MOVE_RIGHT
+		MOVE_BACKWARD
+	}
+
+# Game variables that will be in the state
+available_game_variables = { POSITION_X POSITION_Y ANGLE VELOCITY_X VELOCITY_Y } 
+
+Note: 
+
+Same as 16 but with the changes to beta and logging made in 17, and we start at map 175 from run 16.

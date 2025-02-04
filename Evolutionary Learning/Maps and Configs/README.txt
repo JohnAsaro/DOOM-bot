@@ -1,1 +1,0 @@
-Maps taken from https://github.com/Farama-Foundation/ViZDoom and original DOOM game.

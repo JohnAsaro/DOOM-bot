@@ -1,0 +1,51 @@
+env = mywayhome_VZG(config_path=doomfinder("my_way_home_4_dir.cfg"), pheromone_evaporation_rate=0.00003968253, render=False, frameskip=4) #Lower frameskip makes better maps but takes longer
+test_saved_maps(env=env, num_tests=5, pheromone_grid=saved_pheromone_grid, alpha = 0.7, beta = 0.3) #Test the saved pheromone maps
+available_buttons =
+	{
+		MOVE_FORWARD
+		MOVE_LEFT
+		MOVE_RIGHT
+		MOVE_BACKWARD
+	}
+
+# Game variables that will be in the state
+available_game_variables = { POSITION_X POSITION_Y ANGLE VELOCITY_X VELOCITY_Y } 
+
+Same as run 12 except the logic that determines what happens when every avaliable move has been already taken (so each move that the doomguy can take at a given step is part of the path).
+Right now it picks randomly weighted by alpha and beta, like doomguy hasnt been to any of the possible moves before, but I am worried that might be causing pheremone clumps (albeit less exrteme ones than we saw before),
+so this run just has it pick a random move in that scenerio. This also adds some good variety which might eventually optimize its self in an evolutionary fashion.
+
+RESULT: The random logic seems to outperform the original logic in close spawns and far spawns, but in relatively close spawns, the original logic outeperforms.
+
+Original: 
+Total spawned far: 22/352 -> 6.25%
+Total spawned relatively close: 46/416 -> 11.0576923077%
+Total spawned close: 85/1232 -> 6.89935064935%
+
+Random: 
+Total spawned far: 25/336 -> 7.44047619048%
+Total spawned relatively close: 33/389 -> 8.48329048843%
+Total spawned close: 121/1275 -> 9.49019607843%
+
+However, when regenerating the results, it was found that this was due to random chance, there really doesnt seem to be much of a difference between the two methods.
+
+Original Test 1:
+Total spawned far: 20/347 -> 5.76368876081%
+Total spawned relatively close: 40/406 -> 9.82800982801%
+Total spawned close: 106/1247 -> 8.50040096231%
+
+Random Test 1:
+Total spawned far: 23/388 -> 7.39644970414%
+Total spawned relatively close: 44/353 -> 12.4645892351%
+Total spawned close: 91/1259 -> 7.22795869738%
+
+Original Test 2:
+Total spawn counts and success rates at iteration 199/200
+Total spawned far: 26/366 -> 7.10382513661%
+Total spawned relatively close: 48/416 -> 11.5384615385%
+Total spawned close: 109/1218 -> 8.94909688013%
+
+Random Test 2:
+Total spawned far: 24/381 -> 6.29921259843%
+Total spawned relatively close: 30/400 -> 7.5%
+Total spawned close: 92/1219 -> 7.54716981132%

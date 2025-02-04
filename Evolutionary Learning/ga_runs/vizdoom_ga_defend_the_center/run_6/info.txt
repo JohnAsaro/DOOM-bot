@@ -1,3 +1,0 @@
-Starting with the best models from run 4 as the inital population, do the same run except with population size 25 and total generations 300
-
-Worse than 4 in terms of length mean (132) and reward mean (5.4) but it did not look like it flattened out.

@@ -1,0 +1,17 @@
+env = mywayhome_VZG(config_path=doomfinder("my_way_home_4_dir.cfg"), pheromone_evaporation_rate=0.00009523809, render=False, frameskip=1) #Lower frameskip makes better maps but takes longer
+aco_training(env, num_ants = 10, iterations=50, pheromone_deposit = 2.0, run_dir=run_dir, log_dir=log_dir, maps_dir=maps_dir, beta=1.0) #Run ACO training# Available buttons
+
+available_buttons =
+	{
+		MOVE_FORWARD
+		MOVE_LEFT
+		MOVE_RIGHT
+		MOVE_BACKWARD
+	}
+
+# Game variables that will be in the state
+available_game_variables = { POSITION_X POSITION_Y ANGLE } 
+
+Same as run 6 but double the beta because maybe the issue is that its not getting enough guidance towards the goal in the early stages.
+
+Results: See run_6/info6.txt

@@ -1,0 +1,88 @@
+
+Salvaging whats left of the grid backlog:
+1: Okay so I want to slighltly rework how pheremones are deposited so they are only deposited after an iteration, distance weight and time factor are
+changed because now the scenerio doesnt have random spawns, distance factor just buffs the path the closer it is to the goal, maxing out at reaching the goal,
+time factor is usually 1, but gets higher and higher the faster you beat the scenerio.
+
+Idea for New (node based direction) backlog:
+
+1: Rework the way pathfinding works now, we still do mywayhome, but it spawns in the same place and angle each time. We traverse the map 
+by going from node to node. We go through 21 preplaced nodes for now to traverse the map. Nodes can only travel to nodes directly adjacent to them.
+Each node is connected through two directed edges. When the ant travels from node to another node, add it to the path. Do 50 ants per iteration.
+Save the path of each ant. Pheremones will be deposited on the edges traveled on the path from doomguy to armor. Also notably we probably get rid of the hueristic
+at this point, we just travel using ACO. 
+
+At the end of the iteration, evaporate all from the last iteration, than add back the pheremones deposited for the bast path from the last iteration. 
+Then apply phermeones in the following way. Each edge in a sucessful path gets 1*tics/1000 pheremones. We will take the amount of tics down to 2100 in this enviornment. Write the best (shortest) path (as littearly just a list of nodes traversed) 
+into a text document, then compare it to the length of the shortest path saved so far, if its shorter, save it over that. At the end of it, we will have a shortest path we can load
+and use on the agent. 
+
+Nodes should only be able to travel to other adjacent nodes, so to actually get from node to node, we can just use select next move with the heuristic
+"make the move that will get me closest to the node" until we get there. We should take the frameskip down to 1 for this. 
+
+2: Once that is working, go back to the mywayhome map with no nodes, and implement a system that allows us to dynamically generate
+nodes, using the empty grid with walls defined as refrence. Each node is 32x32, we must only place nodes in places where nodes can exist, 
+nodes must have some space between them, the spawn node and goal node a predefined, and there MUST be a path from the start node to the end node. 
+
+3: Once that is done, now we do something interesting. Notice how the grid based ACO phereomone grids actually do a pretty good job at mapping out the enviornment?
+Lets take advantage of that. So, what we want to do is go back to the grid input, but this time with no walls defined. So run the ACO pathfinding on mywayhome, except 
+probably modify the map so it doesnt end when it picks up the armor, but it does deposit more phermeones. Same deal where it has maybe 50 ants, buff the pheremone deposit on the paths
+that get to the armor faster, and evaporate pheremones BUT don't evaporate them down to 0, if a space on the grid is ever more than 0, it can 
+only go down to 0.1. Now, after 5 or so iterations, we should have a decent outline of the map, because the agent loves rubbing up against the walls.
+Notably, we should still do the thing where we add each square on the grid we think we went to so it doesnt run into the wall forever, but we should not 
+deposit pheremones on those squares, only deposit pheremones on squares we know we got to by checking the grid.
+
+4: We now have an outline of the map we can use for dynamic node generation.
+
+5: Pathfing with these nodes to goal.
+
+Other maps I want to do are E1M1 w/out interactables or obstacles and "Get 3 keys, where beta and nodes open switches between keys, (so when you get one, the second part of the map gets unlocked and you can get that key, then when you get the last one the exit opens and beta switches to that)"
+^ Notably, E1M1 is probably not possible with this approach
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Old Grid Based ACO Backlog, keeping this in case I go back to grid representation:
+Backlog (Ordered based on priority/how easy they are): 
+
+Task 0 - Maybe we just eliminate the random weighted choice all together, and only make that apply when all possible options have already been in the path? 
+Honestly that is probably the best way to go about this, because even if we get some paths going the wrong way, we have low phereomone deposits on those, and 
+it really just needs 1 "correct" path. Also, I think this random choice is whats causing the 1 frameskip models to totally fail.
+
+Task 0.1 - However, that being said, ACO does in fact work off random choice: https://www.sciencedirect.com/science/article/pii/B9780128127070000103, so maybe a better way to go about this 
+could be to get rid of unsuccessful path pheremone deposits, nerf the scenerio to not include random spawns, only do pheremone evaporation and deposit once an iteration, and increase ants to 50ish (and also rank those paths and deposit the most pheremones on the best paths). 
+This not only better reflects the next scenerios I plan on doing, but also better solves problems that ACO is well suited for, and also is a more accurate way of doing ACO. I think 
+letting the path evolve so much in real time has been shooting me in the foot.
+
+Task 1 - because the velocity and frameskip might make the steps big, 
+we now might need to account for the alpha and beta in the entire path taken in a given step, 
+as soon as that step hits a wall, cut it off
+
+Task 2 - figure out how the distance from spawn to goal and time hueristic are being calculated, how much of a boost is it, 
+which one is proirtized more (tbh I forgot how its calculated lol)
+
+    Task 2.1 - do a test with varying amount of time/spawn to goal distance hueristic
+
+Task ? - account for friction, friction is found here  (https://github.com/0dot0repeating/quakemovement) 
+
+^ This will probably be an eternal item because this is incredibly hard to perfect, but what I have now is 
+pretty good for frameskips 4 and below. It falls off the larger the frameskip gets. 
+
+Task ?.1 - One thing I can do is 
+create an updated enviornment that does everything the same but now tracks the accuracy of a given move
+idk how we classify it, maybe like "hits" (exact predictions), "near misses" (almost there) and "misses" (completely off)
+
+
+Possible Concessions: 
+
+1 - a concession I could do is getting rid of the random spawn and maybe even the angle,
+and then just see if the optimization works. <- If the next few tests don't work I am going to do this
+
+2 - At risk of making the scenerio more contrived, 
+I can make it so that spaces next to walls dont accumulate pheremones <- probably wont do
+
+Tests:
+
+1 - I could make it so that it ONLY deposits pheremones on sucessful paths -> I did this but I can do it more
+
+Future Scenerios:
+1 - E1M1 (start with no obstacles or interactables before integrating w/CMA-ES)
+2 - Get 3 keys, where beta switches between keys, (so when you get one, the second part of the map gets unlocked and you can get that key, then when you get the last one the exit opens and beta switches to that)

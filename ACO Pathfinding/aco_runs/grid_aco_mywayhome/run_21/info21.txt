@@ -1,0 +1,18 @@
+env = mywayhome_VZG(config_path=doomfinder("my_way_home_4_dir.cfg"), pheromone_evaporation_rate=0.2, render=False, frameskip=4) #Lower frameskip makes better maps but takes longer
+aco_training(env, num_ants = 10, iterations=200, unsuccessful_deposit=0.1, pheromone_deposit = 20.0, run_dir=run_dir, log_dir=log_dir, maps_dir=maps_dir, alpha = 0.7, beta = 0.3, log_image_rate = 25) #Run ACO training
+
+available_buttons =
+	{
+		MOVE_FORWARD
+		MOVE_LEFT
+		MOVE_RIGHT
+		MOVE_BACKWARD
+	}
+
+# Game variables that will be in the state
+available_game_variables = { POSITION_X POSITION_Y ANGLE VELOCITY_X VELOCITY_Y } 
+
+Note: Exact same changes as 20 except we go down to a frameskip of 4, the friction is also disabled in this one due to the crashing.
+
+Result: Okay so this crashed at iteration 77, this is fine, this method was never going to work, the entire grid as an input space is too large, I am shifting to a node based approach now.
+(See node based approach folder.)

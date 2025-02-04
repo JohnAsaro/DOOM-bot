@@ -1,5 +1,0 @@
-Parameters were trained_agents = run_ga(env, generations=200, pop_size=20, num_parents=5, mutation_rate=0.01)
-This uses the best agents from run 1 as an inital population.
-Reward was "every enemy killed = + 2 pt, every death = -2 pt, every shot missed = -.01 pts"
-
-Looks like avg fitness flattened out around 3 and episode length mean flattened out around 107.5

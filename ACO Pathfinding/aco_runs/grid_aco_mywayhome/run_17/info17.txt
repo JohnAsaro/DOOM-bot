@@ -1,0 +1,22 @@
+env = mywayhome_VZG(config_path=doomfinder("my_way_home_4_dir.cfg"), pheromone_evaporation_rate=0.00003968253, render=False, frameskip=1) #Lower frameskip makes better maps but takes longer
+aco_training(env, num_ants = 10, iterations=200, pheromone_deposit = 8.0, run_dir=run_dir, log_dir=log_dir, maps_dir=maps_dir, alpha = 0.7, beta = 0.3) #Run ACO training
+
+available_buttons =
+	{
+		MOVE_FORWARD
+		MOVE_LEFT
+		MOVE_RIGHT
+		MOVE_BACKWARD
+	}
+
+# Game variables that will be in the state
+available_game_variables = { POSITION_X POSITION_Y ANGLE VELOCITY_X VELOCITY_Y } 
+
+Note:
+Same as run 15 except we pick up at 115 of run 15,
+fixed logging so it stops logging incorrectly when the kernel crashes (which it might here because it has to run for like 2 days)
+And we change the beta logic to instead of boosting each move by a percentage 1 + boost_value, we do 0 + boost_value, 
+its more like an adjustment now so we call them adjustments instead of boosting.
+
+Result: Never finished generating this one because I am pretty sure this is going nowhere,
+and also the kernel crashed.

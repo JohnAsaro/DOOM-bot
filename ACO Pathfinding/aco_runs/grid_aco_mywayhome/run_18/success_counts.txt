@@ -1,0 +1,890 @@
+
+Spawn counts and success rates (for iteration 0):
+Spawned far: 0/0
+Spawned relatively close: 0/3
+Spawned close: 0/7
+
+Total spawn counts and success rates at iteration 0/200
+Total spawned far: 0/0
+Total spawned relatively close: 0/3
+Total spawned close: 0/7
+
+Spawn counts and success rates (for iteration 1):
+Spawned far: 0/3
+Spawned relatively close: 0/1
+Spawned close: 0/6
+
+Total spawn counts and success rates at iteration 1/200
+Total spawned far: 0/3
+Total spawned relatively close: 0/4
+Total spawned close: 0/13
+
+Spawn counts and success rates (for iteration 2):
+Spawned far: 0/1
+Spawned relatively close: 0/1
+Spawned close: 0/8
+
+Total spawn counts and success rates at iteration 2/200
+Total spawned far: 0/4
+Total spawned relatively close: 0/5
+Total spawned close: 0/21
+
+Spawn counts and success rates (for iteration 3):
+Spawned far: 0/3
+Spawned relatively close: 0/1
+Spawned close: 0/6
+
+Total spawn counts and success rates at iteration 3/200
+Total spawned far: 0/7
+Total spawned relatively close: 0/6
+Total spawned close: 0/27
+
+Spawn counts and success rates (for iteration 4):
+Spawned far: 0/3
+Spawned relatively close: 0/1
+Spawned close: 0/6
+
+Total spawn counts and success rates at iteration 4/200
+Total spawned far: 0/10
+Total spawned relatively close: 0/7
+Total spawned close: 0/33
+
+Spawn counts and success rates (for iteration 5):
+Spawned far: 0/4
+Spawned relatively close: 0/1
+Spawned close: 0/5
+
+Total spawn counts and success rates at iteration 5/200
+Total spawned far: 0/14
+Total spawned relatively close: 0/8
+Total spawned close: 0/38
+
+Spawn counts and success rates (for iteration 6):
+Spawned far: 0/1
+Spawned relatively close: 0/1
+Spawned close: 1/8
+
+Total spawn counts and success rates at iteration 6/200
+Total spawned far: 0/15
+Total spawned relatively close: 0/9
+Total spawned close: 1/46
+
+Spawn counts and success rates (for iteration 7):
+Spawned far: 0/2
+Spawned relatively close: 0/2
+Spawned close: 0/6
+
+Total spawn counts and success rates at iteration 7/200
+Total spawned far: 0/17
+Total spawned relatively close: 0/11
+Total spawned close: 1/52
+
+Spawn counts and success rates (for iteration 8):
+Spawned far: 0/1
+Spawned relatively close: 0/2
+Spawned close: 0/7
+
+Total spawn counts and success rates at iteration 8/200
+Total spawned far: 0/18
+Total spawned relatively close: 0/13
+Total spawned close: 1/59
+
+Spawn counts and success rates (for iteration 9):
+Spawned far: 0/1
+Spawned relatively close: 0/3
+Spawned close: 0/6
+
+Total spawn counts and success rates at iteration 9/200
+Total spawned far: 0/19
+Total spawned relatively close: 0/16
+Total spawned close: 1/65
+
+Spawn counts and success rates (for iteration 10):
+Spawned far: 0/0
+Spawned relatively close: 0/3
+Spawned close: 0/7
+
+Total spawn counts and success rates at iteration 10/200
+Total spawned far: 0/19
+Total spawned relatively close: 0/19
+Total spawned close: 1/72
+
+Spawn counts and success rates (for iteration 11):
+Spawned far: 0/2
+Spawned relatively close: 0/1
+Spawned close: 0/7
+
+Total spawn counts and success rates at iteration 11/200
+Total spawned far: 0/21
+Total spawned relatively close: 0/20
+Total spawned close: 1/79
+
+Spawn counts and success rates (for iteration 12):
+Spawned far: 0/3
+Spawned relatively close: 0/1
+Spawned close: 0/6
+
+Total spawn counts and success rates at iteration 12/200
+Total spawned far: 0/24
+Total spawned relatively close: 0/21
+Total spawned close: 1/85
+
+Spawn counts and success rates (for iteration 13):
+Spawned far: 0/1
+Spawned relatively close: 0/3
+Spawned close: 0/6
+
+Total spawn counts and success rates at iteration 13/200
+Total spawned far: 0/25
+Total spawned relatively close: 0/24
+Total spawned close: 1/91
+
+Spawn counts and success rates (for iteration 14):
+Spawned far: 0/2
+Spawned relatively close: 0/2
+Spawned close: 0/6
+
+Total spawn counts and success rates at iteration 14/200
+Total spawned far: 0/27
+Total spawned relatively close: 0/26
+Total spawned close: 1/97
+
+Spawn counts and success rates (for iteration 15):
+Spawned far: 0/3
+Spawned relatively close: 0/1
+Spawned close: 0/6
+
+Total spawn counts and success rates at iteration 15/200
+Total spawned far: 0/30
+Total spawned relatively close: 0/27
+Total spawned close: 1/103
+
+Spawn counts and success rates (for iteration 16):
+Spawned far: 0/2
+Spawned relatively close: 0/2
+Spawned close: 0/6
+
+Total spawn counts and success rates at iteration 16/200
+Total spawned far: 0/32
+Total spawned relatively close: 0/29
+Total spawned close: 1/109
+
+Spawn counts and success rates (for iteration 17):
+Spawned far: 0/1
+Spawned relatively close: 0/4
+Spawned close: 0/5
+
+Total spawn counts and success rates at iteration 17/200
+Total spawned far: 0/33
+Total spawned relatively close: 0/33
+Total spawned close: 1/114
+
+Spawn counts and success rates (for iteration 18):
+Spawned far: 0/1
+Spawned relatively close: 0/3
+Spawned close: 0/6
+
+Total spawn counts and success rates at iteration 18/200
+Total spawned far: 0/34
+Total spawned relatively close: 0/36
+Total spawned close: 1/120
+
+Spawn counts and success rates (for iteration 19):
+Spawned far: 0/0
+Spawned relatively close: 0/2
+Spawned close: 1/8
+
+Total spawn counts and success rates at iteration 19/200
+Total spawned far: 0/34
+Total spawned relatively close: 0/38
+Total spawned close: 2/128
+
+Spawn counts and success rates (for iteration 20):
+Spawned far: 0/1
+Spawned relatively close: 0/1
+Spawned close: 0/8
+
+Total spawn counts and success rates at iteration 20/200
+Total spawned far: 0/35
+Total spawned relatively close: 0/39
+Total spawned close: 2/136
+
+Spawn counts and success rates (for iteration 21):
+Spawned far: 0/1
+Spawned relatively close: 0/3
+Spawned close: 0/6
+
+Total spawn counts and success rates at iteration 21/200
+Total spawned far: 0/36
+Total spawned relatively close: 0/42
+Total spawned close: 2/142
+
+Spawn counts and success rates (for iteration 22):
+Spawned far: 0/0
+Spawned relatively close: 0/3
+Spawned close: 0/7
+
+Total spawn counts and success rates at iteration 22/200
+Total spawned far: 0/36
+Total spawned relatively close: 0/45
+Total spawned close: 2/149
+
+Spawn counts and success rates (for iteration 23):
+Spawned far: 0/2
+Spawned relatively close: 0/2
+Spawned close: 0/6
+
+Total spawn counts and success rates at iteration 23/200
+Total spawned far: 0/38
+Total spawned relatively close: 0/47
+Total spawned close: 2/155
+
+Spawn counts and success rates (for iteration 24):
+Spawned far: 0/3
+Spawned relatively close: 0/3
+Spawned close: 1/4
+
+Total spawn counts and success rates at iteration 24/200
+Total spawned far: 0/41
+Total spawned relatively close: 0/50
+Total spawned close: 3/159
+
+Spawn counts and success rates (for iteration 25):
+Spawned far: 0/2
+Spawned relatively close: 0/3
+Spawned close: 1/5
+
+Total spawn counts and success rates at iteration 25/200
+Total spawned far: 0/43
+Total spawned relatively close: 0/53
+Total spawned close: 4/164
+
+Spawn counts and success rates (for iteration 26):
+Spawned far: 0/3
+Spawned relatively close: 0/3
+Spawned close: 1/4
+
+Total spawn counts and success rates at iteration 26/200
+Total spawned far: 0/46
+Total spawned relatively close: 0/56
+Total spawned close: 5/168
+
+Spawn counts and success rates (for iteration 27):
+Spawned far: 0/1
+Spawned relatively close: 0/4
+Spawned close: 0/5
+
+Total spawn counts and success rates at iteration 27/200
+Total spawned far: 0/47
+Total spawned relatively close: 0/60
+Total spawned close: 5/173
+
+Spawn counts and success rates (for iteration 28):
+Spawned far: 0/2
+Spawned relatively close: 0/1
+Spawned close: 0/7
+
+Total spawn counts and success rates at iteration 28/200
+Total spawned far: 0/49
+Total spawned relatively close: 0/61
+Total spawned close: 5/180
+
+Spawn counts and success rates (for iteration 29):
+Spawned far: 0/4
+Spawned relatively close: 0/3
+Spawned close: 0/3
+
+Total spawn counts and success rates at iteration 29/200
+Total spawned far: 0/53
+Total spawned relatively close: 0/64
+Total spawned close: 5/183
+
+Spawn counts and success rates (for iteration 30):
+Spawned far: 0/1
+Spawned relatively close: 0/3
+Spawned close: 0/6
+
+Total spawn counts and success rates at iteration 30/200
+Total spawned far: 0/54
+Total spawned relatively close: 0/67
+Total spawned close: 5/189
+
+Spawn counts and success rates (for iteration 31):
+Spawned far: 0/2
+Spawned relatively close: 0/2
+Spawned close: 0/6
+
+Total spawn counts and success rates at iteration 31/200
+Total spawned far: 0/56
+Total spawned relatively close: 0/69
+Total spawned close: 5/195
+
+Spawn counts and success rates (for iteration 32):
+Spawned far: 0/2
+Spawned relatively close: 0/2
+Spawned close: 1/6
+
+Total spawn counts and success rates at iteration 32/200
+Total spawned far: 0/58
+Total spawned relatively close: 0/71
+Total spawned close: 6/201
+
+Spawn counts and success rates (for iteration 33):
+Spawned far: 0/4
+Spawned relatively close: 0/1
+Spawned close: 0/5
+
+Total spawn counts and success rates at iteration 33/200
+Total spawned far: 0/62
+Total spawned relatively close: 0/72
+Total spawned close: 6/206
+
+Spawn counts and success rates (for iteration 34):
+Spawned far: 0/4
+Spawned relatively close: 1/3
+Spawned close: 0/3
+
+Total spawn counts and success rates at iteration 34/200
+Total spawned far: 0/66
+Total spawned relatively close: 1/75
+Total spawned close: 6/209
+
+Spawn counts and success rates (for iteration 35):
+Spawned far: 0/0
+Spawned relatively close: 0/3
+Spawned close: 0/7
+
+Total spawn counts and success rates at iteration 35/200
+Total spawned far: 0/66
+Total spawned relatively close: 1/78
+Total spawned close: 6/216
+
+Spawn counts and success rates (for iteration 36):
+Spawned far: 0/2
+Spawned relatively close: 0/2
+Spawned close: 0/6
+
+Total spawn counts and success rates at iteration 36/200
+Total spawned far: 0/68
+Total spawned relatively close: 1/80
+Total spawned close: 6/222
+
+Spawn counts and success rates (for iteration 37):
+Spawned far: 0/2
+Spawned relatively close: 0/2
+Spawned close: 0/6
+
+Total spawn counts and success rates at iteration 37/200
+Total spawned far: 0/70
+Total spawned relatively close: 1/82
+Total spawned close: 6/228
+
+Spawn counts and success rates (for iteration 38):
+Spawned far: 0/2
+Spawned relatively close: 1/5
+Spawned close: 1/3
+
+Total spawn counts and success rates at iteration 38/200
+Total spawned far: 0/72
+Total spawned relatively close: 2/87
+Total spawned close: 7/231
+
+Spawn counts and success rates (for iteration 39):
+Spawned far: 0/1
+Spawned relatively close: 0/2
+Spawned close: 0/7
+
+Total spawn counts and success rates at iteration 39/200
+Total spawned far: 0/73
+Total spawned relatively close: 2/89
+Total spawned close: 7/238
+
+Spawn counts and success rates (for iteration 40):
+Spawned far: 0/0
+Spawned relatively close: 0/1
+Spawned close: 0/9
+
+Total spawn counts and success rates at iteration 40/200
+Total spawned far: 0/73
+Total spawned relatively close: 2/90
+Total spawned close: 7/247
+
+Spawn counts and success rates (for iteration 41):
+Spawned far: 0/3
+Spawned relatively close: 0/1
+Spawned close: 0/6
+
+Total spawn counts and success rates at iteration 41/200
+Total spawned far: 0/76
+Total spawned relatively close: 2/91
+Total spawned close: 7/253
+
+Spawn counts and success rates (for iteration 42):
+Spawned far: 0/0
+Spawned relatively close: 0/6
+Spawned close: 1/4
+
+Total spawn counts and success rates at iteration 42/200
+Total spawned far: 0/76
+Total spawned relatively close: 2/97
+Total spawned close: 8/257
+
+Spawn counts and success rates (for iteration 43):
+Spawned far: 0/1
+Spawned relatively close: 0/3
+Spawned close: 0/6
+
+Total spawn counts and success rates at iteration 43/200
+Total spawned far: 0/77
+Total spawned relatively close: 2/100
+Total spawned close: 8/263
+
+Spawn counts and success rates (for iteration 44):
+Spawned far: 0/3
+Spawned relatively close: 0/3
+Spawned close: 0/4
+
+Total spawn counts and success rates at iteration 44/200
+Total spawned far: 0/80
+Total spawned relatively close: 2/103
+Total spawned close: 8/267
+
+Spawn counts and success rates (for iteration 45):
+Spawned far: 0/0
+Spawned relatively close: 1/5
+Spawned close: 0/5
+
+Total spawn counts and success rates at iteration 45/200
+Total spawned far: 0/80
+Total spawned relatively close: 3/108
+Total spawned close: 8/272
+
+Spawn counts and success rates (for iteration 46):
+Spawned far: 0/0
+Spawned relatively close: 0/2
+Spawned close: 0/8
+
+Total spawn counts and success rates at iteration 46/200
+Total spawned far: 0/80
+Total spawned relatively close: 3/110
+Total spawned close: 8/280
+
+Spawn counts and success rates (for iteration 47):
+Spawned far: 0/0
+Spawned relatively close: 1/4
+Spawned close: 1/6
+
+Total spawn counts and success rates at iteration 47/200
+Total spawned far: 0/80
+Total spawned relatively close: 4/114
+Total spawned close: 9/286
+
+Spawn counts and success rates (for iteration 48):
+Spawned far: 0/2
+Spawned relatively close: 0/3
+Spawned close: 1/5
+
+Total spawn counts and success rates at iteration 48/200
+Total spawned far: 0/82
+Total spawned relatively close: 4/117
+Total spawned close: 10/291
+
+Spawn counts and success rates (for iteration 49):
+Spawned far: 0/1
+Spawned relatively close: 0/1
+Spawned close: 0/8
+
+Total spawn counts and success rates at iteration 49/200
+Total spawned far: 0/83
+Total spawned relatively close: 4/118
+Total spawned close: 10/299
+
+Spawn counts and success rates (for iteration 50):
+Spawned far: 0/0
+Spawned relatively close: 0/2
+Spawned close: 0/8
+
+Total spawn counts and success rates at iteration 50/200
+Total spawned far: 0/83
+Total spawned relatively close: 4/120
+Total spawned close: 10/307
+
+Spawn counts and success rates (for iteration 51):
+Spawned far: 0/2
+Spawned relatively close: 0/3
+Spawned close: 1/5
+
+Total spawn counts and success rates at iteration 51/200
+Total spawned far: 0/85
+Total spawned relatively close: 4/123
+Total spawned close: 11/312
+
+Spawn counts and success rates (for iteration 52):
+Spawned far: 1/1
+Spawned relatively close: 0/1
+Spawned close: 0/8
+
+Total spawn counts and success rates at iteration 52/200
+Total spawned far: 1/86
+Total spawned relatively close: 4/124
+Total spawned close: 11/320
+
+Spawn counts and success rates (for iteration 53):
+Spawned far: 0/1
+Spawned relatively close: 0/1
+Spawned close: 0/8
+
+Total spawn counts and success rates at iteration 53/200
+Total spawned far: 1/87
+Total spawned relatively close: 4/125
+Total spawned close: 11/328
+
+Spawn counts and success rates (for iteration 54):
+Spawned far: 0/2
+Spawned relatively close: 0/0
+Spawned close: 1/8
+
+Total spawn counts and success rates at iteration 54/200
+Total spawned far: 1/89
+Total spawned relatively close: 4/125
+Total spawned close: 12/336
+
+Spawn counts and success rates (for iteration 55):
+Spawned far: 0/3
+Spawned relatively close: 0/0
+Spawned close: 0/7
+
+Total spawn counts and success rates at iteration 55/200
+Total spawned far: 1/92
+Total spawned relatively close: 4/125
+Total spawned close: 12/343
+
+Spawn counts and success rates (for iteration 56):
+Spawned far: 0/2
+Spawned relatively close: 0/1
+Spawned close: 0/7
+
+Total spawn counts and success rates at iteration 56/200
+Total spawned far: 1/94
+Total spawned relatively close: 4/126
+Total spawned close: 12/350
+
+Spawn counts and success rates (for iteration 57):
+Spawned far: 0/1
+Spawned relatively close: 0/0
+Spawned close: 1/9
+
+Total spawn counts and success rates at iteration 57/200
+Total spawned far: 1/95
+Total spawned relatively close: 4/126
+Total spawned close: 13/359
+
+Spawn counts and success rates (for iteration 58):
+Spawned far: 0/1
+Spawned relatively close: 0/3
+Spawned close: 0/6
+
+Total spawn counts and success rates at iteration 58/200
+Total spawned far: 1/96
+Total spawned relatively close: 4/129
+Total spawned close: 13/365
+
+Spawn counts and success rates (for iteration 59):
+Spawned far: 0/4
+Spawned relatively close: 0/2
+Spawned close: 2/4
+
+Total spawn counts and success rates at iteration 59/200
+Total spawned far: 1/100
+Total spawned relatively close: 4/131
+Total spawned close: 15/369
+
+Spawn counts and success rates (for iteration 60):
+Spawned far: 0/1
+Spawned relatively close: 0/5
+Spawned close: 1/4
+
+Total spawn counts and success rates at iteration 60/200
+Total spawned far: 1/101
+Total spawned relatively close: 4/136
+Total spawned close: 16/373
+
+Spawn counts and success rates (for iteration 61):
+Spawned far: 0/2
+Spawned relatively close: 0/2
+Spawned close: 1/6
+
+Total spawn counts and success rates at iteration 61/200
+Total spawned far: 1/103
+Total spawned relatively close: 4/138
+Total spawned close: 17/379
+
+Spawn counts and success rates (for iteration 62):
+Spawned far: 0/1
+Spawned relatively close: 0/2
+Spawned close: 0/7
+
+Total spawn counts and success rates at iteration 62/200
+Total spawned far: 1/104
+Total spawned relatively close: 4/140
+Total spawned close: 17/386
+
+Spawn counts and success rates (for iteration 63):
+Spawned far: 0/0
+Spawned relatively close: 0/4
+Spawned close: 0/6
+
+Total spawn counts and success rates at iteration 63/200
+Total spawned far: 1/104
+Total spawned relatively close: 4/144
+Total spawned close: 17/392
+
+Spawn counts and success rates (for iteration 64):
+Spawned far: 0/1
+Spawned relatively close: 0/3
+Spawned close: 0/6
+
+Total spawn counts and success rates at iteration 64/200
+Total spawned far: 1/105
+Total spawned relatively close: 4/147
+Total spawned close: 17/398
+
+Spawn counts and success rates (for iteration 65):
+Spawned far: 0/3
+Spawned relatively close: 0/3
+Spawned close: 0/4
+
+Total spawn counts and success rates at iteration 65/200
+Total spawned far: 1/108
+Total spawned relatively close: 4/150
+Total spawned close: 17/402
+
+Spawn counts and success rates (for iteration 66):
+Spawned far: 0/1
+Spawned relatively close: 0/1
+Spawned close: 0/8
+
+Total spawn counts and success rates at iteration 66/200
+Total spawned far: 1/109
+Total spawned relatively close: 4/151
+Total spawned close: 17/410
+
+Spawn counts and success rates (for iteration 67):
+Spawned far: 0/0
+Spawned relatively close: 0/2
+Spawned close: 0/8
+
+Total spawn counts and success rates at iteration 67/200
+Total spawned far: 1/109
+Total spawned relatively close: 4/153
+Total spawned close: 17/418
+
+Spawn counts and success rates (for iteration 68):
+Spawned far: 0/3
+Spawned relatively close: 0/2
+Spawned close: 0/5
+
+Total spawn counts and success rates at iteration 68/200
+Total spawned far: 1/112
+Total spawned relatively close: 4/155
+Total spawned close: 17/423
+
+Spawn counts and success rates (for iteration 69):
+Spawned far: 0/1
+Spawned relatively close: 0/1
+Spawned close: 0/8
+
+Total spawn counts and success rates at iteration 69/200
+Total spawned far: 1/113
+Total spawned relatively close: 4/156
+Total spawned close: 17/431
+
+Spawn counts and success rates (for iteration 70):
+Spawned far: 0/2
+Spawned relatively close: 0/3
+Spawned close: 1/5
+
+Total spawn counts and success rates at iteration 70/200
+Total spawned far: 1/115
+Total spawned relatively close: 4/159
+Total spawned close: 18/436
+
+Spawn counts and success rates (for iteration 71):
+Spawned far: 0/2
+Spawned relatively close: 0/3
+Spawned close: 0/5
+
+Total spawn counts and success rates at iteration 71/200
+Total spawned far: 1/117
+Total spawned relatively close: 4/162
+Total spawned close: 18/441
+
+Spawn counts and success rates (for iteration 72):
+Spawned far: 0/0
+Spawned relatively close: 0/2
+Spawned close: 0/8
+
+Total spawn counts and success rates at iteration 72/200
+Total spawned far: 1/117
+Total spawned relatively close: 4/164
+Total spawned close: 18/449
+
+Spawn counts and success rates (for iteration 73):
+Spawned far: 0/2
+Spawned relatively close: 0/3
+Spawned close: 0/5
+
+Total spawn counts and success rates at iteration 73/200
+Total spawned far: 1/119
+Total spawned relatively close: 4/167
+Total spawned close: 18/454
+
+Spawn counts and success rates (for iteration 74):
+Spawned far: 0/0
+Spawned relatively close: 0/2
+Spawned close: 1/8
+
+Total spawn counts and success rates at iteration 74/200
+Total spawned far: 1/119
+Total spawned relatively close: 4/169
+Total spawned close: 19/462
+
+Spawn counts and success rates (for iteration 75):
+Spawned far: 0/5
+Spawned relatively close: 0/2
+Spawned close: 0/3
+
+Total spawn counts and success rates at iteration 75/200
+Total spawned far: 1/124
+Total spawned relatively close: 4/171
+Total spawned close: 19/465
+
+Spawn counts and success rates (for iteration 76):
+Spawned far: 0/3
+Spawned relatively close: 0/0
+Spawned close: 0/7
+
+Total spawn counts and success rates at iteration 76/200
+Total spawned far: 1/127
+Total spawned relatively close: 4/171
+Total spawned close: 19/472
+
+Spawn counts and success rates (for iteration 77):
+Spawned far: 0/3
+Spawned relatively close: 0/2
+Spawned close: 1/5
+
+Total spawn counts and success rates at iteration 77/200
+Total spawned far: 1/130
+Total spawned relatively close: 4/173
+Total spawned close: 20/477
+
+Spawn counts and success rates (for iteration 78):
+Spawned far: 0/3
+Spawned relatively close: 0/3
+Spawned close: 0/4
+
+Total spawn counts and success rates at iteration 78/200
+Total spawned far: 1/133
+Total spawned relatively close: 4/176
+Total spawned close: 20/481
+
+Spawn counts and success rates (for iteration 79):
+Spawned far: 0/1
+Spawned relatively close: 0/4
+Spawned close: 0/5
+
+Total spawn counts and success rates at iteration 79/200
+Total spawned far: 1/134
+Total spawned relatively close: 4/180
+Total spawned close: 20/486
+
+Spawn counts and success rates (for iteration 80):
+Spawned far: 0/2
+Spawned relatively close: 0/1
+Spawned close: 0/7
+
+Total spawn counts and success rates at iteration 80/200
+Total spawned far: 1/136
+Total spawned relatively close: 4/181
+Total spawned close: 20/493
+
+Spawn counts and success rates (for iteration 81):
+Spawned far: 0/0
+Spawned relatively close: 0/4
+Spawned close: 0/6
+
+Total spawn counts and success rates at iteration 81/200
+Total spawned far: 1/136
+Total spawned relatively close: 4/185
+Total spawned close: 20/499
+
+Spawn counts and success rates (for iteration 82):
+Spawned far: 0/3
+Spawned relatively close: 0/3
+Spawned close: 0/4
+
+Total spawn counts and success rates at iteration 82/200
+Total spawned far: 1/139
+Total spawned relatively close: 4/188
+Total spawned close: 20/503
+
+Spawn counts and success rates (for iteration 83):
+Spawned far: 0/3
+Spawned relatively close: 0/2
+Spawned close: 0/5
+
+Total spawn counts and success rates at iteration 83/200
+Total spawned far: 1/142
+Total spawned relatively close: 4/190
+Total spawned close: 20/508
+
+Spawn counts and success rates (for iteration 84):
+Spawned far: 0/0
+Spawned relatively close: 0/3
+Spawned close: 0/7
+
+Total spawn counts and success rates at iteration 84/200
+Total spawned far: 1/142
+Total spawned relatively close: 4/193
+Total spawned close: 20/515
+
+Spawn counts and success rates (for iteration 85):
+Spawned far: 0/1
+Spawned relatively close: 0/3
+Spawned close: 0/6
+
+Total spawn counts and success rates at iteration 85/200
+Total spawned far: 1/143
+Total spawned relatively close: 4/196
+Total spawned close: 20/521
+
+Spawn counts and success rates (for iteration 86):
+Spawned far: 0/0
+Spawned relatively close: 0/4
+Spawned close: 0/6
+
+Total spawn counts and success rates at iteration 86/200
+Total spawned far: 1/143
+Total spawned relatively close: 4/200
+Total spawned close: 20/527
+
+Spawn counts and success rates (for iteration 87):
+Spawned far: 0/2
+Spawned relatively close: 0/1
+Spawned close: 1/7
+
+Total spawn counts and success rates at iteration 87/200
+Total spawned far: 1/145
+Total spawned relatively close: 4/201
+Total spawned close: 21/534
+
+Spawn counts and success rates (for iteration 88):
+Spawned far: 0/2
+Spawned relatively close: 0/3
+Spawned close: 1/5
+
+Total spawn counts and success rates at iteration 88/200
+Total spawned far: 1/147
+Total spawned relatively close: 4/204
+Total spawned close: 22/539
