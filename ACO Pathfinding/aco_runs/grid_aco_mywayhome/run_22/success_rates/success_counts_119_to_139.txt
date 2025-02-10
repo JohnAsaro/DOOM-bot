@@ -1,0 +1,110 @@
+Success rates for iterations 119 to 139:
+
+Success rates for iteration 120:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 121:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 122:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 123:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 124:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 125:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 126:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 127:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 128:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 129:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 130:
+Spawned far: 0/0
+Spawned relatively close: 1/50
+Spawned close: 0/0
+
+Success rates for iteration 131:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 132:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 133:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 134:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 135:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 136:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 137:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 138:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 139:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+------------------------------------------------------------
+
+Total success rates so far:
+Total spawned far: 0/0
+Total spawned relatively close: 1/7000
+Total spawned close: 0/0
+
+------------------------------------------------------------

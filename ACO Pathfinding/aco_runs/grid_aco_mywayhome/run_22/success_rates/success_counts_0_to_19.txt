@@ -1,0 +1,110 @@
+Success rates for iterations 0 to 19:
+
+Success rates for iteration 1:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 2:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 3:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 4:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 5:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 6:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 7:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 8:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 9:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 10:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 11:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 12:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 13:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 14:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 15:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 16:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 17:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 18:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 19:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+Success rates for iteration 20:
+Spawned far: 0/0
+Spawned relatively close: 0/50
+Spawned close: 0/0
+
+------------------------------------------------------------
+
+Total success rates so far:
+Total spawned far: 0/0
+Total spawned relatively close: 0/1000
+Total spawned close: 0/0
+
+------------------------------------------------------------

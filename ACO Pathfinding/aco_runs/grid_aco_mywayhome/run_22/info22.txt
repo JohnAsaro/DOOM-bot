@@ -1,0 +1,10 @@
+Params:
+- Switched back to % based evaporation rate, rn its 100% evapaoration of the last iteration each iteration
+- Slightly adjusted how phereomone decision making works in grid so it would get stuck less, 
+specifically by tracking incorrect predictions/choices with select next move in a different list
+- We now only deposit pheremones once an iteration, at the end of it
+- Tics switched to 2100, I am not sure but I think the time the env takes compounds exponentially with tics and I think that has something to do with 
+interpolating steps
+
+Results: Heartbreaking failure, theres more I can do to get this framework to actually work but I think its just best to change to a node based approach.
+This on its own wont be publishable, but if its struggling this badly in a simple labyrinth scenerio no way we can get aco will grid input to work on larger maps.

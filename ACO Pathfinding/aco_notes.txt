@@ -1,14 +1,3 @@
-Run 22:
-- Switched back to % based evaporation rate, rn its 100% evapaoration of the last iteration each iteration
-- Slightly adjusted how phereomone decision making works in grid so it would get stuck less, 
-specifically by tracking incorrect predictions/choices with select next move in a different list
-- We now only deposit pheremones once an iteration, at the end of it
-
-Salvaging whats left of the grid backlog:
-1: Okay so I want to slighltly rework how pheremones are deposited so they are only deposited after an iteration, distance weight and time factor are
-changed because now the scenerio doesnt have random spawns, distance factor just buffs the path the closer it is to the goal, maxing out at reaching the goal,
-time factor is usually 1, but gets higher and higher the faster you beat the scenerio.
-
 Idea for New (node based direction) backlog:
 
 1: Rework the way pathfinding works now, we still do mywayhome, but it spawns in the same place and angle each time. We traverse the map 
@@ -48,25 +37,19 @@ ________________________________________________________________________________
 Old Grid Based ACO Backlog, keeping this in case I go back to grid representation:
 Backlog (Ordered based on priority/how easy they are): 
 
-Task 0 - Maybe we just eliminate the random weighted choice all together, and only make that apply when all possible options have already been in the path? 
-Honestly that is probably the best way to go about this, because even if we get some paths going the wrong way, we have low phereomone deposits on those, and 
-it really just needs 1 "correct" path. Also, I think this random choice is whats causing the 1 frameskip models to totally fail.
+Task 0 - Get rid of distance from spawn hueristic unless you go back to random spawns, and buff the hueristic that increases the pheremones
+of the trails that finish quickly.
 
-Task 0.1 - However, that being said, ACO does in fact work off random choice: https://www.sciencedirect.com/science/article/pii/B9780128127070000103, so maybe a better way to go about this 
-could be to get rid of unsuccessful path pheremone deposits, nerf the scenerio to not include random spawns, only do pheremone evaporation and deposit once an iteration, and increase ants to 50ish (and also rank those paths and deposit the most pheremones on the best paths). 
-This not only better reflects the next scenerios I plan on doing, but also better solves problems that ACO is well suited for, and also is a more accurate way of doing ACO. I think 
-letting the path evolve so much in real time has been shooting me in the foot.
+Task 1: I want to slighltly rework how pheremones are deposited so they are only deposited after an iteration, distance weight and time factor are
+changed because now the scenerio doesnt have random spawns, distance factor just buffs the path the closer it is to the goal, maxing out at reaching the goal,
+time factor is usually 1, but gets higher and higher the faster you beat the scenerio
 
-Task 1 - because the velocity and frameskip might make the steps big, 
-we now might need to account for the alpha and beta in the entire path taken in a given step, 
-as soon as that step hits a wall, cut it off
+Task 2 - because the velocity and frameskip might make the steps big, 
+we now might need to account for the alpha and beta in the entire path taken in a given step
 
-Task 2 - figure out how the distance from spawn to goal and time hueristic are being calculated, how much of a boost is it, 
-which one is proirtized more (tbh I forgot how its calculated lol)
+Task 3: Make it so that path interpolates after an ant, instead of in real time. This can probably improve performance.
 
-    Task 2.1 - do a test with varying amount of time/spawn to goal distance hueristic
-
-Task ? - account for friction, friction is found here  (https://github.com/0dot0repeating/quakemovement) 
+Task ?: Make the select_next_move predictions work correctly.
 
 ^ This will probably be an eternal item because this is incredibly hard to perfect, but what I have now is 
 pretty good for frameskips 4 and below. It falls off the larger the frameskip gets. 
@@ -75,19 +58,6 @@ Task ?.1 - One thing I can do is
 create an updated enviornment that does everything the same but now tracks the accuracy of a given move
 idk how we classify it, maybe like "hits" (exact predictions), "near misses" (almost there) and "misses" (completely off)
 
-
-Possible Concessions: 
-
-1 - a concession I could do is getting rid of the random spawn and maybe even the angle,
-and then just see if the optimization works. <- If the next few tests don't work I am going to do this
-
-2 - At risk of making the scenerio more contrived, 
-I can make it so that spaces next to walls dont accumulate pheremones <- probably wont do
-
-Tests:
-
-1 - I could make it so that it ONLY deposits pheremones on sucessful paths -> I did this but I can do it more
-
 Future Scenerios:
-1 - E1M1 (start with no obstacles or interactables before integrating w/CMA-ES)
+1 - E1M1 (start with no obstacles or interactables before integrating w/CMA-ES or NEAT)
 2 - Get 3 keys, where beta switches between keys, (so when you get one, the second part of the map gets unlocked and you can get that key, then when you get the last one the exit opens and beta switches to that)
